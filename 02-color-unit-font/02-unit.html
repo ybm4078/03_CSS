@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="02-unit.css">
+</head>
+<body>
+  <h2>px vs %</h2>
+  <div class="parent-wide">
+    <div class="bar px">200px</div>
+    <div class="bar percent">50% (250px)</div>
+  </div>
+  <div class="parent-narrow">         <!-- width를 따로 주지 않았기 때문에 부모 크기 전체가 영역 -->
+    <div class="bar px">200px</div>
+    <div class="bar percent">50% (150px)</div>
+  </div>
+  <h2>em vs rem</h2>
+  <div class ="bax">
+    .box (20px)
+    <p class="em">1.5em -> 30px</p>
+    <p class="rem">1.5rem -> 24px</p>
+  </div>
+
+  <h2>vw / vh</h2>
+  <div class ="bar vw">50vw (사용자가 보는 브라우저 화면 크기)</div>
+  <div style = "width : 50%">
+    <div style ="width : 50vw; background-color : red;">ㄴㅁㅇㄹ</div>
+  </div>
+</body>
+</html>

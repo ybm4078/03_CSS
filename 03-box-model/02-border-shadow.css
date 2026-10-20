@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+.item {
+    display: inline-block;
+    width: 100px;
+    height: 60px;
+    margin: 10px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.solid {
+           /* 굵기 모양 색상 */
+    border: 2px solid tomato; /* 실선 */
+}
+.dashed { border: 2px dashed tomato; }  /* 짫은선 */
+.dotted { border: 2px dotted tomato; }  /* 점선 */
+.bottom {
+    border-left: 5px solid red;
+    border-bottom: 2px solid tomato;
+}
+
+.round {
+    background: tomato;
+    color: white;
+    height: 100px;
+    line-height: 100px;
+}
+
+.r8 { border-radius: 8px; }
+.r24 { border-radius: 24px; }
+.circle { border-radius: 50%; }

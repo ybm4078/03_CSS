@@ -1,0 +1,30 @@
+body {
+    font-family: sans-serif;
+    /*
+        이 화면을 보고 있는 사람의 컴퓨터에 폰트 파일이 있어야만 출력되기 때문에,
+        여러개를 설정해놀고 순서대로 정용이 되도록 할 수 있음.
+        sans-serif : 글자 끝에 돌기가 앖는 고딕체 계열의 폰트를 의미
+                    OS(원도우나, 맥이나) 정해진 폰트를 의미
+     */
+    color: #333;   /* #333333 뜻하고 자식에게 상속됨 */
+}
+
+.size { font-size: 24px; }
+.bold { font-weight: 700; } /* 100~ 900, 400=normal, 700=bold */
+.italic { font-style: italic; }
+
+.center { text-align: center; }
+
+a{
+    text-decoration: none;  /* 밑줄같은 데코레이션 속성을 없셈 */
+    color : inherit;        /* 부모의 색상값을 따라간다는 뜻 */
+}
+
+.no-underline {color: #327ed5; }
+.no-underline:hover { color:red; }
+
+.line-through { text-decoration: line-through; }
+
+.tail { line-height: 1.5; }
+
+.spacing{letter-spacing:4px;}

@@ -1,0 +1,63 @@
+/*
+    :hover (마우스를 올렸을 떄 적용받는  css)
+ */
+.btn {
+    background: white;
+    color: tomato;
+    /* border : 요소의 경계*/
+    border: 2px solid tomato;
+    padding: 8px 20px;
+    /* border-radius : 경개의 외각을 둥글게 */
+    border-radius: 8px;
+}
+
+.btn:hover {
+    background: tomato;
+    color : white;
+}
+
+input:focus {
+    outline: none;
+    border: 5px solid orange;
+    border-radius: 8px;
+}
+
+/*
+    숭서를 통해 고르는건 li 중 첫번째 자식을 고른다
+ */
+
+li:first-child {
+    font-weight: bold;
+}
+
+li:last-child {
+    color: gray;
+}
+
+li:nth-child(4) {
+    color : purple;
+}
+/*
+홀수
+ */
+li:nth-child(odd) {
+    color: brown;
+}
+/*
+짝수
+ */
+li:nth-child(even) {
+    color: blue;
+}
+/*
+    nth-child 괄호 안에 들어가는 건
+    자동으로 자연수가 들어가는 n을 이용 가능
+ */
+li:nth-child(2n-1) {
+    color: cyan;
+}
+
+li:nth-child(3n) {
+    color: red;
+}
+

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="01-direction-justify-align.css">
+</head>
+<body>
+    <h2>display: flex 적용 전</h2>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <h2>display: flex 적용 후(flex-direction :row)</h2>
+    <div class="container flex">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <h2>display: flex 적용 후 (flex-direction: column) </h2>
+    <div class="container flex column">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <h2>display: flex 적용 후 (flex-direction: row-reverse)</h2>
+    <div class="container flex row-reverse">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <h2>display: flex 적용 후 (flex-direction: column-reverse)</h2>
+    <div class="container flex column-reverse">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <h2>justify-content (주측)</h2>
+    <h3>justify-content: flex-start (기본값)</h3>
+<div class="container jc row flex-start">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+</div>
+    <h3>justify-content: canter</h3>
+    <div class="container jc row jc-center">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    <h3>justify-content: flex-end</h3>
+    <div class="container jc row flex-end">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    <h3>justify-content: space-between</h3>
+    <div class="container jc row space-between">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+    <h3>justify-content: space-around</h3>
+    <div class="container jc row space-around">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+    <h3>justify-content: space-evenly</h3>
+    <div class="container jc row space-evenly">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+
+    <h2>align-items(교차축)</h2>
+    <h3>align-items : stretch (기본값) : 자식의 값은 무시하고 부모 값으로 적용</h3>
+    <div class="container ai row stretch">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+
+    <h2>align-items(교차축)</h2>
+    <h3>align-items : flex-start</h3>
+    <div class="container ai row flex-start">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+    <h3>align-items : center</h3>
+    <div class="container ai row center">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+
+    <h3>align-items : flex-end</h3>
+    <div class="container ai row flex-end">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+
+    <h2> justify-content와 align-items의 조합</h2>
+    <div class="container all-center">
+        <div>정 중앙 놓으려면</div>
+    </div>
+</body>
+</html>

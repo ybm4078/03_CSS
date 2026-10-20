@@ -1,0 +1,31 @@
+/*
+    자손 선택자  (공백 연결)
+    서택 부모 밑에 있는 모든 p (깊이 상광 없이)
+ */
+.decendant p {
+    background: #fed7aa;
+}
+
+/*
+    자식 선택자 (>)
+    선택 부모 바로 아래 한 단계의 p만
+ */
+.child > p {
+    background: #fed7aa;
+}
+
+/*
+    인접 형제 선택자(+)
+    선택한 태그 바로 다음 형재 p 하나
+ */
+.adjacent section + p {
+    background: #bbf7d0;
+}
+
+
+/* 일반 형제 선택자(~)
+첫 p 뒤에 오는 같은 부모의 모든 형제 p
+ */
+.sibling p ~ p {
+    background: #fbcfe8;
+}

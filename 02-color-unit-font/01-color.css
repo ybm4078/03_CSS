@@ -1,0 +1,18 @@
+.swatch {
+    display: inline-block; /* 요소 배치방식을 강제 변경 */
+    /*
+        inline-block은 가로에 다른 요소들을 배치할 숭 있고,
+        크기도 변경이 가능한 성질을 가짐 */
+    width: 150px; /* 가로 */
+    height: 80px; /* 새로 */
+    margin: 6px; /* 바깥 여백(빈공간) */
+    padding: 6px; /* 안쪽 여백(빈공간) */
+    color: white; /* 글자 색상 */
+    font-weight: bold; /* 글자 굵기 */
+}
+
+.name { background: tomato;}
+.hex { background: #ff6347;}
+.hex-short { background: #f00;} /* #ff0000; */
+.rgb { background: rgb(255, 99, 71);}
+.hsl { background: hsl(9, 100%, 64%);}

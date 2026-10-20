@@ -1,0 +1,65 @@
+.box {
+    width: 260px;
+    height: 160px;
+    margin: 8px;
+    display: inline-block;
+    border: 1px solid #cbd5e1;
+    background-color: #f1f5f9;
+    background-image: url("images/room.png");
+}
+
+.repeat {
+    /* 가로 세로 */
+    background-size: 60px 120px;
+    /* 한 칸으로 줄여서 쓰면 가로세로 */
+    /* background-image는 반복 출력이 기본값 */
+}
+
+.center {
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: center;
+}
+
+.cover {
+    background-size: cover; /* 꽉 채움 (넘치는 부분은 잘림) */
+    /* 영역이 가로가 더 길기 때문에 가로를 꽉 채우고 세로는 잘림 */
+    /* => 더 긴 부분에 맞쳐서 출력해줌 */
+    background-position: center;
+}
+
+.contain {
+    background-size: contain; /* 이미지가 다 보이게 */
+    /*
+        영역이 세로가 더 짧기 때문에 세로에 맞춰서 넣음
+        => 긴 부분은 빈공간이 생김
+     */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.shorthand {
+    background: #fff7ed url(images/room.png) no-repeat right bottom / 80px;
+}
+
+.gradient{
+    /* linear-gradient는 직선형 그라데이션 : to top, to right 등*/
+    /* radial-gradient는 방사형 그라데이션 : circle(중심형), ellipse(타원형) */
+    /* conic-gradient는 원추형 그라데이션 : 위치값이 없음 */
+    background: conic-gradient( tomato, white);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 100px;
+    text-align: center;
+}
+
+.text-gradient{
+    /*
+        배경색을 텍스트 자리에만 색칠하고,
+        글자를 투명하게 만듦
+     */
+    background: linear-gradient(to bottom, tomato, gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
